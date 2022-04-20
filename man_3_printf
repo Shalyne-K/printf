@@ -58,3 +58,13 @@ base.
 .sp
 .B r, R
 - Respectively print a string in reverse and in ROT13 encryption.
+.B S
+- Prints a string, but non-printable characters are printed this way: \\x, followed by the ASCII code value in uppercase hexadecimal.
+.sp
+.B p
+- Prints an address, given by a pointer variable
+.sp
+.SH BUGS
+_printf does not take care of flags or width and precision specifiers.
+.SH AUTHORS
+Shalyne Onyancha and James Muchiri.
