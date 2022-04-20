@@ -8,3 +8,14 @@
 
 #define SIZE 1024000 /* buffer size */
 
+/**
+ * struct sp - Struct sp
+ *
+ * @sp: The specifier
+ * @f: The function associated
+ */
+typedef struct sp
+{
+	char sp;
+	int (*f)(va_list, char *, int);
+} sp_t;
