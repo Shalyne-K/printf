@@ -18,3 +18,23 @@ On success, _printf returns the number of characters printed. If
 .I format
 is NULL or if the functions encounters any errors, it returns -1.
 .sp
+.B Format of the format string
+.sp
+The format string is a character string composed of zero or more  directives: : ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments.
+.sp
+.B Conversion specifiers
+.sp
+These are the characters that specify the type of conversion to be applied.
+.sp
+.B i, d
+- The int argument is converted to signed decimal notation and printed
+.sp
+.B c
+- The int argument is converted to unsigned char and printed
+.sp
+.B s
+- Prints an entire
+.I string.
+.sp
+.B u
+- Prints an
